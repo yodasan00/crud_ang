@@ -1,0 +1,71 @@
+nav{
+    background-color: #000957;
+}
+.navbar-toggler{
+    border: none;
+}
+h5,.nav-link.active{
+    color: #3572EF;
+}
+
+h5, .nav-link.active{
+    font-weight: bold;
+}
+.nav-link{
+    font-size: 20px;
+    color: aliceblue;
+}
+.ham{
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active{
+    transform: rotate(45deg);
+}
+.hamRotate180.active{
+    transform: rotate(180deg);
+}
+.line{
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#3572EF;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+.ham4 .top{
+    stroke-dasharray: 40 121;
+}
+.ham4 .bottom{
+    stroke-dasharray: 40 121;
+}
+.ham4.active .top{
+    stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+    stroke-dashoffset: -68px;
+}
+
+@media screen and (max-width:448px){
+    h5{
+        font-size: 16px;
+    }
+
+    h6{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:360px){
+    h5{
+        font-size: 12px;
+    }
+
+    h6{
+        font-size: 10px;
+    }
+}

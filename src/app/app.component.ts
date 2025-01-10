@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http';
-import { ItemsComponent } from './item/item.component';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ItemsComponent], 
-  template: `<app-items></app-items>`,
+  imports: [RouterOutlet, NavbarComponent, LoginComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'login_page_demo';
+}
